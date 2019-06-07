@@ -10,6 +10,7 @@ namespace Bigman.LeetCodeSolutionTests
         [Theory]
         [InlineData(new int[]{2, 7, 11, 15}, 9 , new int[]{0,1})]
         [InlineData(new int[]{1, 2, 5, 5, 7, 11, 15}, 10 , new int[]{2,3})]
+        [InlineData(new int[]{3,2,4}, 6 , new int[]{1,2})]
         public void Test_Algorithm_one(int[] nums, int target,int[] expect)
         {
             TwoSum algorithm = new TwoSum();
@@ -23,6 +24,7 @@ namespace Bigman.LeetCodeSolutionTests
         [Theory]
         [InlineData(new int[]{2, 7, 11, 15}, 9 , new int[]{0,1})]
         [InlineData(new int[]{1, 2, 5, 5, 7, 11, 15}, 10 , new int[]{2,3})]
+        [InlineData(new int[]{3,2,4}, 6 , new int[]{1,2})]
         public void Test_Algorithm_two(int[] nums, int target,int[] expect)
         {
             TwoSum algorithm = new TwoSum();

@@ -1,4 +1,5 @@
 ﻿using System;
+using Bigman.LeetCodeSolution;
 
 namespace LeetCodeSolution
 {
@@ -6,7 +7,8 @@ namespace LeetCodeSolution
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            TwoSum algorithm = new TwoSum();
+            algorithm.RunTwo(new int[]{2,3,4},6);
         }
     }
 }

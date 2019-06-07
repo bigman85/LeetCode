@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Collections.Generic;
 
 namespace Bigman.LeetCodeSolution
 {
@@ -22,19 +23,15 @@ namespace Bigman.LeetCodeSolution
 
         public int[] RunTwo(int[] nums, int target)
         {
-            Hashtable hs = new Hashtable();
+            Dictionary<int, int> hs = new Dictionary<int, int>();
             for (int i = 0; i < nums.Length; i++)
             {
-                hs[nums[i]]=i;
-            }
-
-            for (int i = 0; i < nums.Length; i++)
-            {
-                if(hs.Contains(target-nums[i])){
-                    return new int[]{i, Convert.ToInt32( hs[target-nums[i]])};
+                if(hs.Count>0&&hs.ContainsKey(target-nums[i]))
+                {
+                    return new int[] { (hs[target - nums[i]]), i };
                 }
+                hs[nums[i]] = i;
             }
-
             return new int[] { };
         }
     }
