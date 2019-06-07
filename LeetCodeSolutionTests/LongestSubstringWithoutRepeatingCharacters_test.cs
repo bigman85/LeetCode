@@ -12,13 +12,14 @@ namespace Bigman.LeetCodeSolutionTests
         [InlineData("abcabcbb", 3)]
         [InlineData("bbbbb", 1)]
         [InlineData("pwwkew", 3)]
+        [InlineData("", 0)]
         public void Test_Algorithm_One(string src, int expect)
         {
             LongestSubstringWithoutRepeatingCharacters algorithm = new LongestSubstringWithoutRepeatingCharacters();
 
-            int res = algorithm.RunOne(src);
+            int actual = algorithm.RunOne(src);
 
-            Assert.Equal(res,expect);
+            Assert.Equal(expect,actual);
         }
     }
 }
