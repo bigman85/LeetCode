@@ -1673,6 +1673,16 @@
         "build": {
           "build/netcoreapp1.0/xunit.runner.visualstudio.props": {}
         }
+      },
+      "LeetCodeSolution/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v2.2",
+        "compile": {
+          "bin/placeholder/LeetCodeSolution.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LeetCodeSolution.dll": {}
+        }
       }
     }
   },
@@ -5833,10 +5843,16 @@
         "xunit.runner.visualstudio.2.4.0.nupkg.sha512",
         "xunit.runner.visualstudio.nuspec"
       ]
+    },
+    "LeetCodeSolution/1.0.0": {
+      "type": "project",
+      "path": "../LeetCodeSolution/LeetCodeSolution.csproj",
+      "msbuildProject": "../LeetCodeSolution/LeetCodeSolution.csproj"
     }
   },
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.2": [
+      "LeetCodeSolution >= 1.0.0",
       "Microsoft.NET.Test.Sdk >= 15.9.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "xunit >= 2.4.0",
@@ -5870,7 +5886,11 @@
       },
       "frameworks": {
         "netcoreapp2.2": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/renzhiwei/exercise/leetcode/LeetCode/LeetCodeSolution/LeetCodeSolution.csproj": {
+              "projectPath": "/Users/renzhiwei/exercise/leetcode/LeetCode/LeetCodeSolution/LeetCodeSolution.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
