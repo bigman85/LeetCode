@@ -5,7 +5,7 @@ using Bigman.LeetCodeSolutionTests.Utilities;
 
 namespace Bigman.LeetCodeSolutionTests
 {
-    public class TwoSum_test
+    public class TwoSumTest
     {
         [Theory]
         [InlineData(new int[]{2, 7, 11, 15}, 9 , new int[]{0,1})]
