@@ -1,4 +1,5 @@
 ﻿using System;
+using Bigman.LeetCodeSolution;
 
 namespace LeetCodeSolution
 {
@@ -7,6 +8,8 @@ namespace LeetCodeSolution
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
+            LongestSubstringWithoutRepeatingCharacters a = new LongestSubstringWithoutRepeatingCharacters();
+            a.RunOne("bbbb");
         }
     }
 }
