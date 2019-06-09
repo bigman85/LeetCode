@@ -7,6 +7,7 @@ namespace Bigman.LeetCodeSolution
     {
         public string RunOne(string source,int nums)
         {
+            return "";
         }
     }
 }
