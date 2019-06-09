@@ -10,11 +10,12 @@ namespace Bigman.LeetCodeSolutionTests
         [Theory]
         [InlineData("LEETCODEISHIRING",3,"LCIRETOESIIGEDHN")]
         [InlineData("LEETCODEISHIRING",4,"LDREOEIIECIHNTSG")]
+        [InlineData("A",1,"A")]
         public void Test_Algorithm_one(string source, int nums, string expect)
         {
-            var algorithm = new LongestPalindromicSubstring();
+            var algorithm = new ZigzagConversion();
 
-            var actual = algorithm.RunOne(source);
+            var actual = algorithm.RunOne(source,nums);
 
             Assert.Equal(expect, actual);
         }
