@@ -8,8 +8,8 @@ namespace LeetCodeSolution
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            LongestSubstringWithoutRepeatingCharacters a = new LongestSubstringWithoutRepeatingCharacters();
-            a.RunOne("bbbb");
+            var a = new LongestPalindromicSubstring();
+            a.RunTwo("aaaabcaaaaa");
         }
     }
 }
