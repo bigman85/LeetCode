@@ -8,8 +8,8 @@ namespace LeetCodeSolution
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
-            var a = new ZigzagConversion();
-            a.RunOne("A", 1);
+            var a = new RegularExpressionMatching();
+            a.RunOne("A", "ab*..*");
         }
     }
 }
